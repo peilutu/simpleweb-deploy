@@ -1,0 +1,12 @@
+<h1>this is the home page...</h1>
+
+{% for pic in photo %}
+
+<h2>{{pic.title}}</h2>
+
+<h3>{{pic.description}}</h3>
+
+<!-- 注意看image的写法，是一个url！！ -->
+<img src="{{pic.image.url}}" alt="cake_img" />
+
+{% endfor %}
